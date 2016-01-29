@@ -1,8 +1,8 @@
 <?php
 
-include_once "Tg.php";
+include_once "TgSqlite.php";
 
-class Derpibooru extends Tg {
+class Derpibooru extends TgSqlite {
     const BOT_ID        = "166234207";
     const BOT_USERNAME  = "DerpiDeliveryBot";
 
