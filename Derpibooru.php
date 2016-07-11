@@ -37,7 +37,7 @@ class Derpibooru extends TgSqlite {
             if(!$term) continue;
             if (substr($term,0,1) == "!"){
                 //Flag handling
-                switch (substr($term,1)){
+                switch (strtolower(substr($term,1))){
                     case "faves":
                         $rtn["params"]["faves"] = "only";   break;
                     case "-faves":
