@@ -129,7 +129,7 @@ class Derpibooru extends TgSqlite {
         $results = [];
         foreach($imageList as $q){
             $type = $q["original_format"]=="gif"?"gif":"photo";
-            $id = strval($q["id_number"]);
+            $id = strval($q["id"]);
             $results[] = [
                 "type" => $type,
                 "id" => $id,
